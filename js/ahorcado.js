@@ -37,7 +37,7 @@ function teclado(btn, palabra) {
     return;
 }
 
-function initGame() {
+function startGame() {
     let indice = Math.floor(Math.random() * window.listaPalabras.length);
     let palabra = window.listaPalabras[indice];
 
@@ -53,7 +53,7 @@ function initGame() {
     }
 
     let teclado_f1 = "qwertyuiop";
-    let teclado_f2 = "asdfghjklñ";
+    let teclado_f2 = "asdfghjkl";
     let teclado_f3 = "zxcvbnm";
 
     let f1 = document.querySelector(".fila1");
@@ -124,7 +124,7 @@ function newGame() {
         removeChilds(gameOver);
     }
 
-    initGame();
+    startGame();
     return;
 }
 
@@ -134,10 +134,10 @@ function gameOver() {
         gameOver.classList.remove("state-nodisplay");
 
         const game = document.createElement("div");
-        game.textContent = "GAME";/*palabra[i].toUpperCase()*/
+        game.textContent = "GAME";
 
         const over = document.createElement("div");
-        over.textContent = "OVER";/*palabra[i].toUpperCase()*/
+        over.textContent = "OVER";
 
         gameOver.append(game);
         gameOver.append(over);
@@ -145,7 +145,6 @@ function gameOver() {
         gameOver.classList.add("stateAnimation", "gameOver")
 
         window.endgame = true;
-        //play("audio/lose.mp3")
     }
     return;
 }
@@ -240,17 +239,16 @@ function youWin() {
         youWin.classList.remove("state-nodisplay");
 
         const you = document.createElement("div");
-        you.textContent = "YOU";/*palabra[i].toUpperCase()*/
+        you.textContent = "YOU";
 
         const win = document.createElement("div");
-        win.textContent = "WIN!";/*palabra[i].toUpperCase()*/
+        win.textContent = "WIN!";
 
         youWin.append(you);
         youWin.append(win);
 
         youWin.classList.add("stateAnimation", "youWin");
         window.endgame = true;
-        //play("audio/win.mp3")
     }
     return;
 }
@@ -371,11 +369,12 @@ modo.addEventListener('click', function () {
     }
     else {
         let r = document.querySelector(':root');
-        r.style.setProperty('--color1', '#C7FFED');
-        r.style.setProperty('--color2', '#D8FFDB');
-        r.style.setProperty('--color3', '#008F8C');
-        r.style.setProperty('--color4', '#015958');
-        r.style.setProperty('--color5', '#023535');
+        r.style.setProperty('--color1', '#d4b0bd');
+        r.style.setProperty('--color2', '#be8a9d');
+        r.style.setProperty('--color3', '#a7657f');
+        r.style.setProperty('--color4', '#8f3f62');
+        r.style.setProperty('--color5', '#761246');
+
         window.modoOscuro = false
         this.src = "./img/moon.png"
         let intento_back = window.intento
