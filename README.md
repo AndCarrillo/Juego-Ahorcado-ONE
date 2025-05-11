@@ -1,3 +1,5 @@
+![Banner](https://github.com/AndCarrillo/Juego-Ahorcado-ONE/blob/main/img/banner.PNG)
+
 # Descripción
 Juego del ahorcado desarrollado con JavaScript, HTML y CSS para el segundo challenge del ***Proyecto ONE*** de **Oracle+Alura LATAM**.
 
