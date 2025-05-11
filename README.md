@@ -1,24 +1,46 @@
 ![Banner](https://github.com/AndCarrillo/Juego-Ahorcado-ONE/blob/main/img/banner.PNG)
 
-# Descripción
-Juego del ahorcado desarrollado con JavaScript, HTML y CSS para el segundo challenge del ***Proyecto ONE*** de **Oracle+Alura LATAM**.
+# 🕹️ Juego del Ahorcado | Oracle ONE + Alura LATAM
 
-El desafío consiste en construir una página web que contenga el juego del ahorcado, se presenta un menú inicial donde se puede elegir entre iniciar el juego o añadir una palabra al juego, el juego consiste en presentar un palabra oculta que se irá descifrando a medida que el usuario seleccione una letra, si la letra forma parte de la palabra se mostrará su posición en la palabra y las veces que aparece, si en caso contrario la letra no pertenece a la palabra se pierde un intento y comienza a dibujarse al ahorcado, la cantidad de intentos posibles son hasta que la figura se complete, en total son 9 intentos, si la figura se completa se pierde el juego pero si completan la palabra antes de completar la figura el juego se gana.
+Juego del ahorcado desarrollado con **JavaScript**, **HTML** y **CSS** como parte del segundo challenge del programa **Oracle Next Education (ONE)** de **Oracle + Alura LATAM**.
 
-# Requisitos
+## 📌 Descripción
 
-- Debe funcionar solo con letras mayúsculas;
-- No deben ser utilizadas letras con acentos ni caracteres especiales;
-- Al completar el dibujo de la horca, debe ser mostrado un mensaje "Fin del juego" en la pantalla;
-- Si se completa la palabra correcta antes de que se acaben los intentos, debe ser mostrado un mensaje de "Ganaste, Felicidades!" en la pantalla.
-- La página debe tener los guiones indicando cada letra de la palabra, separados por un espacio;
-- Para comenzar el juego la página debe tener un botón de "Iniciar Juego";
-- No debe ser posible escribir números dentro del juego.
-- Las letras equivocadas deben aparecer en la pantalla, pero no pueden aparecer de forma repetida;
-- Las letras correctas deben aparecer en la pantalla encima de los guiones, en la posición correcta en relación a la palabra.
+El juego permite al usuario adivinar una palabra oculta seleccionando letras. Si la letra es correcta, se muestra en su lugar correspondiente; si es incorrecta, se dibuja una parte del ahorcado. El jugador tiene hasta 9 intentos antes de perder.
 
-# Extras:
-- La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra".
+### ✅ Funcionalidades principales
 
-# Enlace:
-https://andcarrillo.github.io/Juego-Ahorcado-ONE/
+* Letras correctas se muestran en su posición.
+* Letras incorrectas se listan (sin repetirse).
+* Límite de **9 intentos** antes de perder.
+* Mensajes dinámicos:
+
+  * `"You Win!"` al adivinar.
+  * `"Game Over!"` al perder.
+* Interfaz intuitiva con botones para:
+
+  * **Iniciar juego**
+  * **Agregar palabra personalizada**
+
+### 🛠️ Requisitos técnicos
+
+* Solo letras **mayúsculas sin acentos**.
+* No permite ingresar **números** ni caracteres especiales.
+* Palabras nuevas pueden añadirse desde un campo de texto.
+* Cada letra oculta está representada por un **guion bajo (\_)**.
+
+---
+
+## 🌗 Vista previa del proyecto
+
+<div align="center">
+<a 🌞 Modo claro />
+<img src="https://github.com/AndCarrillo/Juego-Ahorcado-ONE/blob/main/img/whiteMode.PNG" alt="Modo claro" width="45%" style="margin-right: 10px;" />
+<img src="https://github.com/AndCarrillo/Juego-Ahorcado-ONE/blob/main/img/darkMode.PNG" alt="Modo oscuro" width="45%" />
+
+</div>
+
+---
+
+### 🚀 Demo del proyecto
+🔗 https://andcarrillo.github.io/Juego-Ahorcado-ONE/
